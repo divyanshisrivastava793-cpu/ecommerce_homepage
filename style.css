@@ -1,0 +1,212 @@
+:root {
+  --gold: #dd9e15;
+  --dark: #1c1c1c;
+  --muted: #070606;
+  --bg: #8b8787;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HEADER */
+header {
+  padding: 20px 40px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  margin: 0 12px;
+  font-size: 14px;
+}
+
+.search {
+  padding: 8px 16px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+}
+
+/* HERO */
+.hero {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: auto;
+  color: var(--muted);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: var(--dark);
+  color: #f5f9fcf5;
+  font-size: 14px;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+  font-size: 14px;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 40px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* PRODUCTS */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+.price del {
+  color: #999;
+}
+
+/* BANNER */
+.banner {
+  background: url("elegant-woman-with-gold-jewelry-earrings-chain-close-up-portrait_221436-4010.jpg") center/cover;
+  padding: 120px 40px;
+  text-align: center;
+  color: #fff;
+  border-radius: 24px;
+}
+
+/* GIFTS */
+.gift-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.gift {
+  background: #f2f7f5;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 26px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: #ddd;
+  padding: 60px 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.copyright {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 13px;
+  color: #111010;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
